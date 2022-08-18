@@ -17,6 +17,8 @@ If (SubStr(A_OSVersion,1,3) = "10.")
 ;Include dependencies from library
 #Include %A_ScriptDir%\lib
 #Include Ini.ahk
+; Include personal files - ignored by git
+#Include %A_ScriptDir%\personal
 
 ; Connect to INI configuration file using Ini.ahk class
 IniFilePath:=A_ScriptDir "\MM_Settings.ini"
